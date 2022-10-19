@@ -16,4 +16,7 @@ RUN apt-get update                                                              
     cp lilyjazz-master/otf/* /usr/local/lilypond/usr/share/lilypond/current/fonts/otf/           && \
     cp lilyjazz-master/svg/* /usr/local/lilypond/usr/share/lilypond/current/fonts/svg/           && \
     cp lilyjazz-master/stylesheet/* /usr/local/lilypond/usr/share/lilypond/current/ly/           && \
-    rm -rf /tmp/*
+    rm -rf /tmp/*                                                                                && \
+    apt-get clean                                                                                && \
+    rm -rf /var/lib/apt/lists/*
+
