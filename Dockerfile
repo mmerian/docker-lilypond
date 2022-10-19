@@ -8,6 +8,7 @@ RUN apt-get update                                                              
         --no-install-recommends -y                                                                  \
         wget bzip2 ca-certificates                                                               && \
     apt-get clean                                                                                && \
+    cd /tmp                                                                                      && \
     wget http://lilypond.org/download/binaries/linux-64/lilypond-${LILYPOND_VERSION}.linux-64.sh && \
     wget https://github.com/OpenLilyPondFonts/lilyjazz/archive/master.tar.gz                     && \
     sh lilypond-${LILYPOND_VERSION}.linux-64.sh --batch                                          && \
