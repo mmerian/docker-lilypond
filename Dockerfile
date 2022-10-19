@@ -1,6 +1,6 @@
 FROM debian:bullseye-slim
 
-ENV LILYPOND_VERSION=2.22.1-1
+ENV LILYPOND_VERSION=2.22.2-1
 
 RUN apt-get update                                                                               && \
     apt-get upgrade -y                                                                           && \
